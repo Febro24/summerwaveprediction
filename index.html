@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heat Wave Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Heat Wave Prediction</h1>
+        
+        <div class="input-group">
+            <label for="avgTemp">Avg Temp (°C):</label>
+            <input type="number" id="avgTemp" placeholder="Enter avg temp">
+        </div>
+
+        <div class="input-group">
+            <label for="maxTemp">Max Temp (°C):</label>
+            <input type="number" id="maxTemp" placeholder="Enter max temp">
+        </div>
+
+        <div class="input-group">
+            <label for="minTemp">Min Temp (°C):</label>
+            <input type="number" id="minTemp" placeholder="Enter min temp">
+        </div>
+
+        <div class="input-group">
+            <label for="windSpeed">Wind Speed (km/h):</label>
+            <input type="number" id="windSpeed" placeholder="Enter wind speed">
+        </div>
+
+        <div class="input-group">
+            <label for="precipitation">Precipitation (mm):</label>
+            <input type="number" id="precipitation" placeholder="Enter precipitation">
+        </div>
+
+        <div class="input-group">
+            <label for="windDir">Wind Direction (°):</label>
+            <input type="number" id="windDir" placeholder="Enter wind direction">
+        </div>
+
+        <div class="input-group">
+            <label for="snowDepth">Snow Depth (mm):</label>
+            <input type="number" id="snowDepth" placeholder="Enter snow depth">
+        </div>
+
+        <div class="input-group">
+            <label for="sunshine">Sunshine (min):</label>
+            <input type="number" id="sunshine" placeholder="Enter sunshine duration">
+        </div>
+
+        <div class="input-group">
+            <label for="windGust">Wind Gust (km/h):</label>
+            <input type="number" id="windGust" placeholder="Enter wind gust">
+        </div>
+
+        <div class="input-group">
+            <label for="seaLevelPressure">Sea Level Pressure (hPa):</label>
+            <input type="number" id="seaLevelPressure" placeholder="Enter sea level pressure">
+        </div>
+
+        <button onclick="getPrediction()">Get Prediction</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
